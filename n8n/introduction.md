@@ -10,9 +10,7 @@ Regarding our company, we have a project involving the removal of sensitive data
 
 We have a client who wishes to remove sensitive data from their documents and store them in a database. Furthermore, the client has several use cases in mind for the database after this. For instance, they may use the database in a customer support service, such that, when a service provider assists a client with a query, the service provider can consult the database for previous similar cases and develop a strategy to assist the customer further.
 
-In general, such a pipeline will be divided into two blocks. 
-
-In general, such a system can be divided into two main parts. The first part is creating a data storage system and building a vector database:
+In general, such a system can be divided into two main parts. The first part is creating a database and building a vector store:
 
 ![alt text](images/create_vector_store.png)
 
@@ -44,11 +42,11 @@ Our project has already implemented a basic command line interface for running t
 
 ![alt text](images/test_pipeline.png)
 
-As the service also requires its initial settings in order to function, we will specify them in the `prepare parameters for evaluation` node. After that, we will save these settings in the `auto_config.json` file, whose path we will submit to the testing interface through the n8n `run evaluation` node.
+As the our service also requires its initial settings, we will specify them in the `prepare parameters for evaluation` node. After that, we will save these settings in the `auto_config.json` file, whose path we will submit to the testing interface through the n8n `run evaluation` node.
 
 ![alt text](images/test_execute.png)
 
-This is how the testing process will be conducted. All test results will need to be captured, of course. There are several options for storing data in n8n, including using the API of specific database providers, saving to Google Sheets, local storage, or even ploting a graph. In order to better understand the analysis, we have chosen the latter option. The results will be presented as follows:
+This is how the testing process will be conducted. All test results will need to be captured, of course. There are several options for storing data in n8n, including using the API of specific database providers, saving to Google Sheets, local storage, or even ploting a graph. In order to better understand the analysis, we chose the latter option. The results are as follows:
 
 ![alt text](images/chart.png)
 
