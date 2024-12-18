@@ -37,7 +37,7 @@ Full launch:
 
 ![alt text](gifs/vector_search.gif)
 
-#### Сценарий #2: Evaluation
+#### Case #2: Evaluation
 Our project is in development, and we are adding additional heuristics in order to improve the detection of sensitive data. As such, we require continuous testing. n8n provides a good opportunity for continuous testing, and this framework even includes time-based triggers. For illustration, let us consider a trigger that is activated when a test file is added to a folder.
 
 Our project has already implemented a basic command line interface for running tests. This interface reads data from a file specified by the user and outputs the results to the console. We plan to use this interface in n8n.
