@@ -34,6 +34,7 @@ Using the chat node, we submit a request to the generated vector database and re
 ![alt text](images/health_report.png)
 
 Full launch:
+
 ![alt text](gifs/vector_search.gif)
 
 #### Сценарий #2: Evaluation
@@ -52,4 +53,5 @@ This is how the testing process will be conducted. All test results will need to
 ![alt text](images/chart.png)
 
 And this is the full testing process:
+
 ![alt text](gifs/test_pipeline.gif)
